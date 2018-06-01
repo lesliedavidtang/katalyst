@@ -1,6 +1,9 @@
-# Client
+This repository is a clone from https://github.com/katalystcoin/WavesGUI
 
-![Alt text](https://pbs.twimg.com/media/CjUjPVgVAAA60Pv.jpg "KatalystDEX Lite Client Screen")
+I was tasked to make adjustments to the frontend as part of my internship with Katalyst Pte Ltd. 
+
+---------------------------
+# Client
 
 Ever wanted to access your crypto funds quickly but had to wait for hours while the blockchain downloads first?
 The KatalystDEX Lite Client connects to public KatalystDEX nodes to retrieve up-to-date blockchain information.
