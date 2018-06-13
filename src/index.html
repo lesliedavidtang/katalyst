@@ -49,7 +49,7 @@
   <table id="lockscreenTable">
 
     <thead>
-    <div id="logoNversion">
+    <div id="logoNversion" style="height: 30vh">
       <img src="img/wB-bg-KATALYST.svg" style="width: 100%; height: 100%"  class="centerizedImg"/>
       <div class="centerizedText">
       <p class="centerizedText" ng-class='{testnet: isTestnet()}'>{{::home.title}} <span class="wlcversion">{{::home.version}}</span></p>
@@ -168,16 +168,16 @@
                   <input type="text" placeholder="Name" id="walletName" name="walletName" class="wInput ng-pristine ng-valid ng-empty ng-touched" ng-model="vm.name" focus-me="accounts.mode === 'register'" aria-invalid="false" style="">
                 </div><br>
 <!-- start of wallet email. just a placeholder field now. ng-model="vm.email" // just a dummy for now... TEMPORARILY DISABLED-->
-<!--                 <div class="form-field">
-                  <label for="walletEmail">
+                 <!-- <div class="form-field"> -->
+<!--                   <label for="walletEmail">
                     E-MAIL<span class="infoSpan" tooltipster tooltip-theme="tooltipster-theme1" tooltip-html title="Just a placeholder field for now"></span>
                     
-                  </label>
+                  </label> -->
 
 
-                  <input type="email" placeholder="Email" id="walletEmail" name="walletEmail" class="wInput ng-pristine ng-untouched ng-empty ng-valid ng-valid-required ng-valid-email" ng-model="vm.email" ng-required="required" aria-invalid="false">
+<!--                   <input type="email" placeholder="Email" id="walletEmail" name="walletEmail" class="wInput ng-pristine ng-untouched ng-empty ng-valid ng-valid-required ng-valid-email" ng-model="vm.email" ng-required="required" aria-invalid="false">
                 </div>
-              <br>-->
+              <br> -->
 
 <!-- end of wallet email -->
                 
@@ -285,17 +285,17 @@
         <h2 class="sectionHeader">ACCOUNT INFO BACKUP</h2>
         <p>This area contains your account's basic information. Click the <span class="fontBold">COPY</span> button in order to copy the contents to the clipboard or <span class="fontBold">CLOSE</span> to exit.</p></br>
         <form id="backupForm">
-<!--           <div class="plate-warning">
+          <div class="plate-warning">
             <p class="dialog-text" style="font-weight: bold;">Treat your SEED (backup phrase) with care!</p>
             <p class="dialog-text">Only SEED can provide access to your wallet.</p>
             <p class="dialog-text">1. Don't put your SEED anywhere except official<br/>KatalystDEX clients (look at the site domain).</p>
             <p class="dialog-text">If someone else accesses it you will lose your funds.</p>
             <p class="dialog-text">2. Store your SEED safely, it is the only<br/>way to restore your wallet.</p>
-          </div> -->
+          </div>
           <label for="seedBackup">SEED</label><br/>
-          <textarea id="seedBackup" class="wInput" rows="4" readonly ng-model="menu.seed"></textarea><br/>
+          <textarea id="seedBackup" class="wInput" rows="2" readonly ng-model="menu.seed"></textarea><br/>
           <label for="encodedSeedBackup">ENCODED SEED</label><br/>
-          <textarea id="encodedSeedBackup" class="wInput" rows="4" readonly ng-model="menu.encodedSeed"></textarea><br/>
+          <textarea id="encodedSeedBackup" class="wInput" rows="2" readonly ng-model="menu.encodedSeed"></textarea><br/>
           <label for="privateKeyBackup">PRIVATE KEY</label><br/>
           <input id="privateKeyBackup" class="wInput" type="text" readonly ng-model="menu.privateKey"/><br/>
           <label for="publicKeyBackup">PUBLIC KEY</label><br/>
